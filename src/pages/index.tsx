@@ -5,7 +5,8 @@ import useSWR from 'swr'
 import ButtonSolid from '../components/Buttons/ButtonSolid'
 import ButtonOutline from '../components/Buttons/ButtonOutline'
 import SwiperHero from '../components/Swipers/SwiperHero'
-import SocialMediaButtons from '../components/Partials/SocialMediaButtons'
+import MediasButtons from '../components/Partials/MediasButtons'
+import SectionSobre from '../components/Sections/SectionSobre'
 
 // type inferedTypes = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -22,7 +23,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <SwiperHero />
-      <SocialMediaButtons />
+      <SectionSobre />
+      <MediasButtons />
       <main className="flex items-center justify-center flex-col gap-5 pt-4 h-screen">
         <h1>Em breve | shortly | 間もなく</h1>
         <ButtonSolid>Button Solid</ButtonSolid>

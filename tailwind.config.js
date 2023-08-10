@@ -13,6 +13,9 @@ module.exports = {
           gray: {
             50: '#949494',
           },
+          pink: {
+            50: '#FFF7F8',
+          },
           green: {
             100: '#C5E884',
           },
@@ -22,7 +25,6 @@ module.exports = {
           purple: {
             10: '#E5DEFF',
             50: '#5338CC',
-            100: '#775AFF',
           },
           yellow: {
             100: '#DACE00',

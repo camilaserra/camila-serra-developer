@@ -21,7 +21,7 @@ export function Header() {
   return (
     <header
       className={`fixed z-50 w-full shadow-xl backdrop-blur transition-all top-0 py-3 ${
-        y > 0 ? 'bg-black/70' : 'bg-black'
+        y > 0 ? 'bg-black/70' : 'transparent'
       } `}
     >
       {/* {y > 0 ? null : <TopBar />} */}

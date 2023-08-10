@@ -8,11 +8,7 @@ export function WhatsappButton() {
       className="fixed bottom-32 md:bottom-12 right-12 z-50"
       rel="noreferrer"
     >
-      <Icon
-        icon="logos:whatsapp-icon"
-        className="hover:scale-105 transition-all"
-        fontSize={48}
-      />
+      <Icon icon="logos:whatsapp-icon" />
     </a>
   )
 }

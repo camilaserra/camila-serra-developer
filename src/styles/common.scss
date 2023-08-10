@@ -20,6 +20,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.active-link {
+  @apply border-b-2 border-brand-purple-50;
+}
+
 .before {
   position: relative;
   &::before {
@@ -31,5 +35,26 @@ html {
     top: 0;
     left: 0;
     background-image: linear-gradient(136deg, #000001, rgb(129 129 129 / 21%));
+  }
+}
+
+.media-button-wrapper {
+  @apply flex flex-col gap-1 fixed bottom-4 right-4 z-50;
+
+  .card1 {
+    @apply shadow-md hover:cursor-pointer hover:scale-105 hover:bg-[#0e76a8] w-14 h-14 outline-none border-0 bg-white flex justify-center items-center transition-all;
+    border-radius: 90px 5px 5px 5px;
+  }
+  .card2 {
+    @apply shadow-md hover:cursor-pointer hover:scale-105 hover:bg-[#34af23] w-14 h-14 outline-none border-0 bg-white flex justify-center items-center transition-all;
+    border-radius: 5px 90px 5px 5px;
+  }
+  .card3 {
+    @apply shadow-md hover:cursor-pointer hover:scale-105 hover:bg-[#000] w-14 h-14 outline-none border-0 bg-white flex justify-center items-center transition-all;
+    border-radius: 5px 5px 5px 90px;
+  }
+  .card4 {
+    @apply shadow-md hover:cursor-pointer hover:scale-105 hover:bg-[#0054f7] w-14 h-14 outline-none border-0 bg-white flex justify-center items-center transition-all;
+    border-radius: 5px 5px 90px 5px;
   }
 }

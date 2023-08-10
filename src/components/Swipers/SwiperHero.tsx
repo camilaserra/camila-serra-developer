@@ -4,7 +4,7 @@ import { Pagination, Autoplay } from 'swiper'
 export const bannersHero = [
   {
     id: 1,
-    url: '/img/bg/bg-hero-one.webp',
+    url: '/img/bg/bg-hero-four.jpg',
     imgElementOne: '',
     alt: 'Discontapp',
     titulo:
@@ -23,7 +23,7 @@ export const bannersHero = [
   },
   {
     id: 2,
-    url: '/img/bg/bg-hero-two.webp',
+    url: '/img/bg/bg-hero-three.jpg',
     imgElementOne: '',
     alt: 'Discontapp',
     titulo:
@@ -47,12 +47,12 @@ export default function SwiperHero() {
     <Swiper
       pagination={true}
       loop={true}
-      /*   autoplay={{
+      autoplay={{
         delay: 5000,
         disableOnInteraction: false,
-      }} */
+      }}
       modules={[Pagination, Autoplay]}
-      className="h-[80vh] md:h-[100vh] pt-20"
+      className="h-[80vh] md:h-[100vh]"
     >
       {bannersHero.map((banner) => (
         <SwiperSlide
