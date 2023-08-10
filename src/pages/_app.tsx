@@ -50,26 +50,26 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        title="_____SiteName_____"
-        description="___SiteDescription___    "
+        title="Camila Serra Developer"
+        description="Welcome to my portfolio!"
         canonical="https://vercel.app/"
         openGraph={{
           url: 'https://vercel.app/',
-          title: '_____SiteName_____',
-          description: '___SiteDescription___',
+          title: 'Camila S Developer',
+          description: 'Welcome to my portfolio!',
           images: [
             {
               url: '/img/seo.png',
               width: 1200,
               height: 627,
-              alt: '_____SiteName_____',
+              alt: 'Image Seo',
               type: 'image/png',
             },
           ],
-          siteName: 'gilmarcasepatentes.com.br',
+          siteName: 'camilaserradeveloper.com.br',
         }}
         twitter={{
-          handle: '@GilmarcaEPatentes',
+          handle: '@CamilaSerraDeveloper',
           site: '@site',
           cardType: 'summary_large_image',
         }}

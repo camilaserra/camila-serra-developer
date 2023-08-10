@@ -3,14 +3,21 @@
 import { Icon } from '@iconify/react'
 import Link from 'next/link'
 export const navLinks = [
-
   {
-    route: '/sobre-nos',
-    name: 'Sobre Nós',
+    route: '/sobre',
+    name: 'Sobre',
+  },
+  {
+    route: '/resumo',
+    name: 'Resumo',
+  },
+  {
+    route: '/portfolio',
+    name: 'Portfólio',
   },
   {
     route: '/contatos',
-    name: 'Contatos',
+    name: 'Contato',
   },
 ]
 
@@ -22,12 +29,6 @@ export default function NavLinks() {
           <span className="text-white cursor-pointer">{link.name}</span>
         </Link>
       ))}
-      <a href="/" rel="noreferrer" target="_blank">
-        <Icon icon="mdi:facebook" className="text-white" />
-      </a>
-      <a href="/" rel="noreferrer" target="_blank">
-        <Icon icon="mdi:instagram" className="text-white" />
-      </a>
     </>
   )
 }

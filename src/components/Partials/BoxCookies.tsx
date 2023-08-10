@@ -1,22 +1,23 @@
-import { useEffect, useState } from 'react';
-import Cookies from 'js-cookie';
-import privacyPolicyModalStore from '../../stores/modals/privacyPolicyModalStore';
-import ButtonOutline from '../Buttons/ButtonOutline';
-import ButtonSolid from '../Buttons/ButtonSolid';
+import { useEffect, useState } from 'react'
+import Cookies from 'js-cookie'
+import privacyPolicyModalStore from '../../stores/modals/privacyPolicyModalStore'
+import { Icon } from '@iconify/react'
+import ButtonSolid from '../Buttons/ButtonSolid'
+import router from 'next/router'
 
 export const BoxCookies = () => {
   const { setModalState } = privacyPolicyModalStore()
-  const [openBoxCookie, setOpenBoxCookie] = useState(true);
+  const [openBoxCookie, setOpenBoxCookie] = useState(true)
 
   function setCookie() {
-    Cookies.set('user-accept-cookies', "hasCookie", {
+    Cookies.set('user-accept-cookies', 'hasCookie', {
       expires: 31557600,
-    });
+    })
     setOpenBoxCookie(false)
   }
 
   function checkCookie() {
-    const cookie = Cookies.get('user-accept-cookies');
+    const cookie = Cookies.get('user-accept-cookies')
     if (!cookie) {
       setOpenBoxCookie(true)
     } else {
@@ -29,34 +30,37 @@ export const BoxCookies = () => {
   }, [])
 
   return (
-    <div className='fixed bg-zinc-200 w-full border-t-4 border-cyan-400 transition-all bottom-0'
+    <div
+      className="fixed left-0 bottom-4 z-10 h-fit w-full border-2 border-[#c2c2c2] bg-brand-purple-100 shadow-lg transition-all sm:w-[50%] md:left-4 md:w-[40%] lg:w-[30%]"
       style={{
         display: openBoxCookie ? 'block' : 'none',
       }}
     >
       <div className="p-5">
         <div>
-          <h4 className="text-brand-gray-100 text-2xl font-semibold">
-            Esse site usa cookies
-          </h4>
-          <p className="my-4 md:my-2">
+          <div className="flex items-center justify-center gap-2">
+            <h4 className="text-center text-2xl font-extrabold uppercase text-white">
+              Esse site usa cookies
+            </h4>
+            <Icon
+              icon="fluent:cookies-20-regular"
+              className=" text-4xl text-white"
+            />
+          </div>
+          <p className="my-4 text-center text-white md:my-2">
             Nós armazenamos dados temporariamente para melhorar a sua
-            experiência de navegação e recomendar conteúdo de seu interesse.
-            Ao utilizar nossos serviços, você concorda com tal monitoramento.
+            experiência de navegação e recomendar conteúdo de seu interesse. Ao
+            utilizar nossos serviços, você concorda com tal monitoramento.
           </p>
         </div>
-        <div className="flex justify-between items-center">
-          <ButtonOutline
-            onClick={() => setModalState(true)}>
-            Política de Privacidade
-          </ButtonOutline>
-          <ButtonSolid
-            onClick={setCookie}>
-            Aceitar
+        <div className="flex items-center gap-4 justify-between">
+          <ButtonSolid onClick={() => router.push('/politicaDePrivacidade')}>
+            Políticas de Privacidade
           </ButtonSolid>
+
+          <ButtonSolid onClick={setCookie}>Aceitar</ButtonSolid>
         </div>
       </div>
     </div>
-  );
-};
-
+  )
+}
