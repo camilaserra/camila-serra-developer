@@ -13,11 +13,11 @@ export default function SectionSobre() {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <div className=" col-span-2 md:col-span-1">
+          <div className="col-span-2 md:col-span-1">
             <img src="/img/image/imagem-me.png" alt="Minha Imagem" />
           </div>
           <div className=" col-span-2 md:col-span-1">
-            <p className="text-brand-purple-50 font-bold text-3xl">
+            <p className="text-brand-purple-50 font-bold text-3xl mb-6">
               Quem sou eu?
             </p>
             <p className=" text-brand-gray-50">

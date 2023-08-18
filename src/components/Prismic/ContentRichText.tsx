@@ -1,7 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import { PrismicRichText } from '@prismicio/react'
+import { RichTextField } from '@prismicio/types'
 
-export default function ContentRichText({ data }: { data: [] | undefined }) {
+export default function ContentRichText({
+  data,
+}: {
+  data: RichTextField | undefined
+}) {
   return (
     <PrismicRichText
       field={data}
@@ -25,11 +30,11 @@ export default function ContentRichText({ data }: { data: [] | undefined }) {
           <h6 className="text-sm font-bold">{children}</h6>
         ),
         paragraph: ({ children }) => (
-          <p className="text-base mb-3">{children}</p>
+          <p className="text-sm mb-3 text-white">{children}</p>
         ),
         preformatted: ({ children }) => <pre>{children}</pre>,
         strong: ({ children }) => (
-          <strong className="font-semibold">{children}</strong>
+          <strong className="font-semibold text-black">{children}</strong>
         ),
         em: ({ children }) => <em>{children}</em>,
         listItem: ({ children }) => <li>{children}</li>,
@@ -44,7 +49,7 @@ export default function ContentRichText({ data }: { data: [] | undefined }) {
           />
         ),
         hyperlink: ({ children, node }) => (
-          <a href={node.data.url} target="_blank" rel="noreferrer" >
+          <a href={node.data.url} target="_blank" rel="noreferrer">
             {children}
           </a>
         ),

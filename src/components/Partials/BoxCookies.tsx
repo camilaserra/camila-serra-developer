@@ -31,7 +31,7 @@ export const BoxCookies = () => {
 
   return (
     <div
-      className="fixed left-0 bottom-4 z-10 h-fit w-full border-2 border-[#c2c2c2] bg-brand-purple-100 shadow-lg transition-all sm:w-[50%] md:left-4 md:w-[40%] lg:w-[30%]"
+      className="fixed left-0 bottom-4 z-10 h-fit w-full border-2 border-[#c2c2c2] bg-brand-purple-50 shadow-lg transition-all sm:w-[50%] md:left-4 md:w-[40%] lg:w-[30%]"
       style={{
         display: openBoxCookie ? 'block' : 'none',
       }}
@@ -48,16 +48,14 @@ export const BoxCookies = () => {
             />
           </div>
           <p className="my-4 text-center text-white md:my-2">
-            Nós armazenamos dados temporariamente para melhorar a sua
-            experiência de navegação e recomendar conteúdo de seu interesse. Ao
-            utilizar nossos serviços, você concorda com tal monitoramento.
+            Olá, para melhorar a sua experiência de navegação, armazeno de forma
+            segura os seus dados.
           </p>
         </div>
         <div className="flex items-center gap-4 justify-between">
           <ButtonSolid onClick={() => router.push('/politicaDePrivacidade')}>
             Políticas de Privacidade
           </ButtonSolid>
-
           <ButtonSolid onClick={setCookie}>Aceitar</ButtonSolid>
         </div>
       </div>

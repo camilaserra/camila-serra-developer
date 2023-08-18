@@ -5,17 +5,18 @@
   "status": true,
   "json": {
     "Main": {
+      "icon": {
+        "type": "Image",
+        "config": {
+          "label": "Icon",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "titulo": {
         "type": "Text",
         "config": {
           "label": "Título",
-          "placeholder": ""
-        }
-      },
-      "resumo": {
-        "type": "Text",
-        "config": {
-          "label": "Resumo",
           "placeholder": ""
         }
       },
@@ -26,14 +27,6 @@
           "placeholder": "",
           "allowTargetBlank": true,
           "multi": "paragraph,heading2,strong,em,image,list-item,o-list-item,hyperlink,heading3"
-        }
-      },
-      "imagem": {
-        "type": "Image",
-        "config": {
-          "label": "Imagem",
-          "constraint": {},
-          "thumbnails": []
         }
       }
     }

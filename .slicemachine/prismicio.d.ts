@@ -488,6 +488,17 @@ export type PostDocument<Lang extends string = string> = prismicT.PrismicDocumen
 /** Content for Serviço documents */
 interface ServicoDocumentData {
     /**
+     * Icon field in *Serviço*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: servico.icon
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    icon: prismicT.ImageField<never>;
+    /**
      * Título field in *Serviço*
      *
      * - **Field Type**: Text
@@ -499,17 +510,6 @@ interface ServicoDocumentData {
      */
     titulo: prismicT.KeyTextField;
     /**
-     * Resumo field in *Serviço*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: servico.resumo
-     * - **Tab**: Main
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    resumo: prismicT.KeyTextField;
-    /**
      * Descrição field in *Serviço*
      *
      * - **Field Type**: Rich Text
@@ -520,17 +520,6 @@ interface ServicoDocumentData {
      *
      */
     descricao: prismicT.RichTextField;
-    /**
-     * Imagem field in *Serviço*
-     *
-     * - **Field Type**: Image
-     * - **Placeholder**: *None*
-     * - **API ID Path**: servico.imagem
-     * - **Tab**: Main
-     * - **Documentation**: https://prismic.io/docs/core-concepts/image
-     *
-     */
-    imagem: prismicT.ImageField<never>;
 }
 /**
  * Serviço document from Prismic

@@ -7,12 +7,17 @@ import ButtonOutline from '../components/Buttons/ButtonOutline'
 import SwiperHero from '../components/Swipers/SwiperHero'
 import MediasButtons from '../components/Partials/MediasButtons'
 import SectionSobre from '../components/Sections/SectionSobre'
+import SectionServicos from '../components/Sections/SectionServicos'
 
 // type inferedTypes = InferGetStaticPropsType<typeof getStaticProps>
 
 const Home: NextPage = () => {
   const { data: bannersHome } = useSWR('banners_da_home', () =>
     client.getSingle('banners_da_home')
+  )
+
+  const { data: servicosHome } = useSWR('getServicosHome', () =>
+    client.getAllByType('servico')
   )
 
   return (
@@ -24,6 +29,8 @@ const Home: NextPage = () => {
       </Head>
       <SwiperHero />
       <SectionSobre />
+      <SectionServicos servicos={servicosHome as []} />
+
       <MediasButtons />
       <main className="flex items-center justify-center flex-col gap-5 pt-4 h-screen">
         <h1>Em breve | shortly | 間もなく</h1>
