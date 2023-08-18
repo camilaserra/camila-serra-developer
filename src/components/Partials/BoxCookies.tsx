@@ -4,6 +4,7 @@ import privacyPolicyModalStore from '../../stores/modals/privacyPolicyModalStore
 import { Icon } from '@iconify/react'
 import ButtonSolid from '../Buttons/ButtonSolid'
 import router from 'next/router'
+import ButtonOutline from '../Buttons/ButtonOutline'
 
 export const BoxCookies = () => {
   const { setModalState } = privacyPolicyModalStore()
@@ -31,7 +32,7 @@ export const BoxCookies = () => {
 
   return (
     <div
-      className="fixed left-0 bottom-4 z-10 h-fit w-full border-2 border-[#c2c2c2] bg-brand-purple-50 shadow-lg transition-all sm:w-[50%] md:left-4 md:w-[40%] lg:w-[30%]"
+      className="fixed left-0 bottom-4 z-10 h-fit w-full border-[1px]  border-brand-purple-100 bg-black shadow-lg transition-all sm:w-[50%] md:left-4 md:w-[40%] lg:w-[30%]"
       style={{
         display: openBoxCookie ? 'block' : 'none',
       }}
@@ -39,12 +40,12 @@ export const BoxCookies = () => {
       <div className="p-5">
         <div>
           <div className="flex items-center justify-center gap-2">
-            <h4 className="text-center text-2xl font-extrabold uppercase text-white">
+            <h4 className="text-center text-2xl font-extrabold text-white">
               Esse site usa cookies
             </h4>
             <Icon
               icon="fluent:cookies-20-regular"
-              className=" text-4xl text-white"
+              className=" text-4xl  text-brand-purple-50"
             />
           </div>
           <p className="my-4 text-center text-white md:my-2">

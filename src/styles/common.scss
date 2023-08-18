@@ -65,7 +65,7 @@ html {
   &::after,
   &::before {
     content: '';
-    @apply bg-[#5338cc4c] absolute;
+    @apply bg-brand-purple-100 absolute;
   }
 
   &::before {
@@ -76,6 +76,7 @@ html {
     content: '';
     @apply absolute h-12 top-[8%] right-[5%] border-[1px] border-brand-purple-50;
   }
+
   .box {
     width: 100%;
     height: 100%;
