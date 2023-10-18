@@ -10,7 +10,7 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             rel="shortcut icon"
-            href="/img/favicon.png"
+            href="/img/favicon-32x32.png"
             type="image/x-icon"
           />
           <meta name="theme-color" content="#fff" />

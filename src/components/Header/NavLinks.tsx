@@ -26,7 +26,9 @@ export default function NavLinks() {
     <>
       {navLinks.map((link) => (
         <Link key={link.name} href={link.route}>
-          <span className="text-white cursor-pointer">{link.name}</span>
+          <span className="text-white cursor-pointer text-3xl">
+            {link.name}
+          </span>
         </Link>
       ))}
     </>

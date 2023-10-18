@@ -15,7 +15,7 @@ export default function SectionServicos({ servicos }: ServicoProps) {
             Technologies I work
           </p>
           <p className="text-center md:text-start text-4xl font-semibold text-white">
-            Hards Skills
+            Hard Skills
           </p>
         </div>
 

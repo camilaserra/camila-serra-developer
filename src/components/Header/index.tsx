@@ -27,15 +27,15 @@ export function Header() {
       {/* {y > 0 ? null : <TopBar />} */}
 
       <Container>
-        <div className="flex items-center justify-between">
-          <Link href="/">
+        <div className="flex items-center justify-center">
+          {/*   <Link href="/">
             <img
               src="/img/logo.png"
               alt=""
               className="py-3 transition-all cursor-pointer"
               style={{ height: y > 0 ? '3rem' : '4rem' }}
             />
-          </Link>
+          </Link> */}
           <div className="md:flex gap-5 items-center hidden">
             <NavLinks />
           </div>

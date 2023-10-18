@@ -33,13 +33,12 @@ export default function SectionSobre() {
                 com uma visão estética apurada para entregar interfaces
                 intuitivas e atraentes. Tenho expertise com HTML, SASS, Tailwind
                 e JavaScript, além de conhecimento prático de frameworks
-                populares, como ReactJs e Laravel.
+                populares, como React.Js e Laravel.
               </p>
             </div>
-
             <div className="mb-6 py-4">
               <p className="text-brand-gray-50 text-lg text-center md:text-start mb-2">
-                De: <strong>Belém - Pa / Brazil</strong>
+                <strong>Belém - Brasil</strong>
               </p>
               <p className="text-brand-gray-50 text-lg text-center md:text-start">
                 Email:{' '}
@@ -48,8 +47,7 @@ export default function SectionSobre() {
                 </strong>
               </p>
             </div>
-
-            <div>
+            <div className="gap-4 flex">
               <a
                 href="/pdf/curriculo.pdf"
                 target="_blank"
@@ -57,6 +55,14 @@ export default function SectionSobre() {
                 className="text-white transition-all bg-pink-800 hover:bg-pink-900 rounded-3xl py-2 px-3"
               >
                 Download CV
+              </a>
+              <a
+                href="https://www.canva.com/design/DAFsadC-h3w/view"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white transition-all bg-pink-800 hover:bg-pink-900 rounded-3xl py-2 px-3"
+              >
+                Ver CV online
               </a>
             </div>
           </div>
