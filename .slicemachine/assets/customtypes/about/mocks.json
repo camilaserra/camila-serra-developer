@@ -1,0 +1,43 @@
+{
+  "title": {
+    "__TYPE__": "FieldContent",
+    "value": "evidence",
+    "type": "Text"
+  },
+  "subtitle": {
+    "__TYPE__": "FieldContent",
+    "value": "heat",
+    "type": "Text"
+  },
+  "simple_description": {
+    "__TYPE__": "FieldContent",
+    "value": "declared",
+    "type": "Text"
+  },
+  "full_description": {
+    "__TYPE__": "FieldContent",
+    "value": "judge",
+    "type": "Text"
+  },
+  "location": {
+    "__TYPE__": "FieldContent",
+    "value": "perfectly",
+    "type": "Text"
+  },
+  "email": {
+    "__TYPE__": "FieldContent",
+    "value": "doing",
+    "type": "Text"
+  },
+  "arquivo": {
+    "__TYPE__": "LinkContent",
+    "value": {
+      "id": "mock_Media_link",
+      "kind": "image/jpeg",
+      "name": "mock_name",
+      "url": "https://source.unsplash.com/daily",
+      "size": "0",
+      "__TYPE__": "FileLink"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "about",
+  "label": "About",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Digite aqui!"
+        }
+      },
+      "subtitle": {
+        "type": "Text",
+        "config": {
+          "label": "Subtitle",
+          "placeholder": "Digite aqui!"
+        }
+      },
+      "simple_description": {
+        "type": "Text",
+        "config": {
+          "label": "Simple description",
+          "placeholder": "Digite aqui!"
+        }
+      },
+      "full_description": {
+        "type": "Text",
+        "config": {
+          "label": "Full description",
+          "placeholder": "Digite aqui!"
+        }
+      },
+      "location": {
+        "type": "Text",
+        "config": {
+          "label": "Location",
+          "placeholder": "Ex: Belém - PA"
+        }
+      },
+      "email": {
+        "type": "Text",
+        "config": {
+          "label": "Email",
+          "placeholder": "Ex: exemplo@com.br"
+        }
+      },
+      "arquivo": {
+        "type": "Link",
+        "config": {
+          "label": "Arquivo",
+          "placeholder": "",
+          "select": "media"
+        }
+      }
+    }
+  }
+}

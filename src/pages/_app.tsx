@@ -50,13 +50,13 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        title="Camila Serra Developer"
+        title="Camila Serra - Frontend Developer"
         description="Welcome to my portfolio!"
-        canonical="https://vercel.app/"
+        canonical="https://camila-serra-developer.vercel.app/"
         openGraph={{
-          url: 'https://vercel.app/',
-          title: 'Camila S Developer',
-          description: 'Welcome to my portfolio!',
+          url: 'https://camila-serra-developer.vercel.app/',
+          title: 'Camila Serra - Frontend Developer',
+          description: 'Welcome to myFrontend Developer - Camila Serra portfolio!',
           images: [
             {
               url: '/img/seo.png',

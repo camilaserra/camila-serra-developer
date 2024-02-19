@@ -1,32 +1,46 @@
 /* eslint-disable @next/next/no-img-element */
-
-import { Icon } from '@iconify/react'
 import Link from 'next/link'
+import router, { useRouter } from 'next/router'
+import { useWindowScroll } from 'react-use'
 export const navLinks = [
   {
-    route: '/sobre',
-    name: 'Sobre',
+    route: '/',
+    name: 'Home',
   },
   {
-    route: '/resumo',
-    name: 'Resumo',
+    route: '/about',
+    name: 'About',
+  },
+  {
+    route: '/services',
+    name: 'Services',
   },
   {
     route: '/portfolio',
     name: 'Portfólio',
   },
   {
-    route: '/contatos',
-    name: 'Contato',
+    route: '/blog',
+    name: 'Blog',
+  },
+  {
+    route: '/contact',
+    name: 'Contact',
   },
 ]
 
 export default function NavLinks() {
+  const { y } = useWindowScroll()
+  const router = useRouter()
+
   return (
     <>
       {navLinks.map((link) => (
         <Link key={link.name} href={link.route}>
-          <span className="text-white cursor-pointer text-3xl">
+          <span
+            className={`cursor-pointer text-xl ${y > 0 ? 'text-white' : 'text-white'
+              } ${router.asPath === link.route ? 'active-link' : ''}`}
+          >
             {link.name}
           </span>
         </Link>
