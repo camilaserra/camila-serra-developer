@@ -85,7 +85,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           ) : (
             <Component {...pageProps} />
           )}
-          <Footer />
+        {/*   <Footer /> */}
           <BoxCookies />
           <Modals />
           <ToasterComponent />
