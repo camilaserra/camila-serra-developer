@@ -16,12 +16,12 @@ export default async function handler(
     message: 'Sem erros',
     results: {
       id: 1,
-      nome: 'Bredi Tecnologia',
-      email: 'contato@bredi.com.br',
+      nome: 'Camila Serra',
+      email: 'camilaserrasilva@gmail.com',
       functionarios_cadastrados: 10,
       funcionarios_ativos: 10,
       funcionarios_inativos: 0,
-      logo: 'https://www.bredi.com.br/img/logo/logo.svg',
+      logo: '/img/favicon-32x32.png',
     },
   })
 }

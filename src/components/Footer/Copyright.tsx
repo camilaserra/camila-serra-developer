@@ -8,20 +8,20 @@ export function Copyright() {
       <Container>
         <div className="flex items-center justify-center md:justify-between flex-col md:flex-row">
           <p className="text-white text-sm m-0">
-            Boilerplate Next {new Date().getFullYear()} © Todos os direitos
+            Camila Serra {new Date().getFullYear()} © Todos os direitos
             reservados
           </p>
           <div className="flex items-center">
             <p className="text-white flex items-center text-sm m-0">
               <a
-                href="https://www.bredi.com.br/"
+                href="/"
                 target="_blank"
                 rel="noreferrer"
               >
                 {/* Desenvolvido por */}
                 {/* <img
-                  src="/bredi.png"
-                  alt="bredi tecnologia"
+                  src="/"
+                  alt="Camila Serra"
                   width={18}
                   className="inline-block"
                 /> */}
