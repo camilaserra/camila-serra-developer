@@ -44,7 +44,6 @@ export default function SectionServicos() {
                   </div>
                   <ContentRichText data={servico.data.descricao} />
                 </div>
-         
             </a>
           ))}
         </div>
