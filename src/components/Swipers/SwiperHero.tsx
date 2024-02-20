@@ -8,7 +8,6 @@ export default function SwiperHero() {
     client.getSingle('banners_da_home')
   )
 
-  console.log(bannersHero)
   return (
     <Swiper
       pagination={false}
@@ -22,7 +21,7 @@ export default function SwiperHero() {
     >
     {bannersHero?.data.banners.map((banner, index) => (
         <SwiperSlide
-          key={bannersHero.id}
+          key={index}
           style={{ backgroundImage: `url(${banner.banner.url})` }}
           className="bg-cover bg-center bg-no-repeat flex items-center before"
         >

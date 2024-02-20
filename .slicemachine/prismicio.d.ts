@@ -269,6 +269,17 @@ interface ServicoDocumentData {
      *
      */
     descricao: prismicT.RichTextField;
+    /**
+     * Link para o site field in *Serviço*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: Insira o link aqui!
+     * - **API ID Path**: servico.link_para_o_site
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    link_para_o_site: prismicT.KeyTextField;
 }
 /**
  * Serviço document from Prismic

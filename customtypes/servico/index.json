@@ -28,6 +28,13 @@
           "allowTargetBlank": true,
           "multi": "paragraph,heading2,strong,em,image,list-item,o-list-item,hyperlink,heading3"
         }
+      },
+      "link_para_o_site": {
+        "type": "Text",
+        "config": {
+          "label": "Link para o site",
+          "placeholder": "Insira o link aqui!"
+        }
       }
     }
   }

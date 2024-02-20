@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       </Head>
       <SwiperHero />
       <SectionSobre />
-      <SectionServicos servicos={servicosHome as []} />
+      <SectionServicos />
 
       <MediasButtons />
       <main className="flex items-center justify-center flex-col gap-5 pt-4 h-screen">

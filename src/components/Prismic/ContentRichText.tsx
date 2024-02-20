@@ -30,7 +30,7 @@ export default function ContentRichText({
           <h6 className="text-sm font-bold">{children}</h6>
         ),
         paragraph: ({ children }) => (
-          <p className="text-sm mb-3 text-white">{children}</p>
+          <p className="text-base font-thin mb-3 text-white">{children}</p>
         ),
         preformatted: ({ children }) => <pre>{children}</pre>,
         strong: ({ children }) => (

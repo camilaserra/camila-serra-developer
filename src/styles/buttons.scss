@@ -3,9 +3,9 @@
 }
 
 .btn-solid {
-  @apply bg-brand-purple-50 transition-all hover:-translate-y-1  text-white rounded-3xl;
+  @apply bg-brand-purple-10 transition-all hover:-translate-y-1  text-white rounded-3xl;
 }
 
 .btn-outline {
-  @apply bg-transparent border rounded-3xl border-brand-purple-100 text-white hover:bg-brand-purple-50;
+  @apply bg-transparent border rounded-3xl border-brand-purple-10 text-white hover:bg-brand-purple-10;
 }
