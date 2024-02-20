@@ -30,7 +30,7 @@ export default function SectionServicos() {
 
         <div className="grid grid-cols-12 gap-6">
           {dataOrdenada.map((servico, index) => (
-            <a href={servico.data.link_para_o_site as string} key={servico.id} target='_blank' className="card-skills-wrapper col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4">
+            <a rel="noopener" href={servico.data.link_para_o_site as string} key={servico.id} target='_blank' className="card-skills-wrapper col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4">
                 <div className="box">
                   <div className="flex items-center gap-3 mb-4">
                     <img
