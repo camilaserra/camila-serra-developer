@@ -12,6 +12,10 @@ export default function SectionServicos() {
   if (!data) {
     return <div>Carregando...</div>
   }
+
+  const dataOrdenada = [...data].sort((a, b) =>
+    (a.data.titulo || '').localeCompare(b.data.titulo || '')
+  );
   return (
     <div className="py-10 md:py-20 bg-black">
     <div className="main_container">
@@ -25,8 +29,8 @@ export default function SectionServicos() {
         </div>
 
         <div className="grid grid-cols-12 gap-6">
-          {data.map((servico, index) => (
-            <a href={servico.data.link_para_o_site as string} key={servico.id} className="card-skills-wrapper col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4">
+          {dataOrdenada.map((servico, index) => (
+            <a href={servico.data.link_para_o_site as string} key={servico.id} target='_blank' className="card-skills-wrapper col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4">
                 <div className="box">
                   <div className="flex items-center gap-3 mb-4">
                     <img
