@@ -52,6 +52,7 @@ export default function SectionSobre() {
           </div>
         </div>
       </div>
+      <div id='technologies'></div>
     </div>
   )
 }

@@ -8,25 +8,25 @@ export const navLinks = [
     name: 'Home',
   },
   {
-    route: '/about',
+    route: '/#about',
     name: 'About',
   },
   {
-    route: '/services',
-    name: 'Services',
+    route: '/#technologies',
+    name: 'Technologies',
   },
   {
-    route: '/portfolio',
+    route: '/#resume',
+    name: 'Resume',
+  },
+/*   {
+    route: '/#portfolio',
     name: 'Portfólio',
   },
   {
-    route: '/blog',
+    route: '/contatos',
     name: 'Blog',
-  },
-  {
-    route: '/contact',
-    name: 'Contact',
-  },
+  }, */
 ]
 
 export default function NavLinks() {

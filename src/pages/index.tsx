@@ -8,6 +8,7 @@ import SwiperHero from '../components/Swipers/SwiperHero'
 import MediasButtons from '../components/Partials/MediasButtons'
 import SectionSobre from '../components/Sections/SectionSobre'
 import SectionServicos from '../components/Sections/SectionServicos'
+import SectionExperiencia from '../components/Sections/SectionExperiencia'
 
 // type inferedTypes = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -26,11 +27,8 @@ const Home: NextPage = () => {
       <SwiperHero />
       <SectionSobre />
       <SectionServicos />
-
+      <SectionExperiencia />
       <MediasButtons />
-      <main className="flex items-center justify-center flex-col gap-5 pt-4 h-screen">
-        <h1>Em breve | shortly | 間もなく</h1>
-      </main>
     </div>
   )
 }

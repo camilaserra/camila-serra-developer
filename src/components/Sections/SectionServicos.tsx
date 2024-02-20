@@ -18,7 +18,7 @@ export default function SectionServicos() {
   );
   return (
     <div className="py-10 md:py-20 bg-black">
-    <div className="main_container">
+      <div className="main_container">
         <div className="mb-20 p-2">
           <p className="text-lg font-light mb-2 text-brand-gray-50 text-center md:text-start">
             Technologies I work
@@ -26,6 +26,7 @@ export default function SectionServicos() {
           <p className="text-center md:text-start text-4xl font-semibold text-white">
             Hard Skills
           </p>
+          <div className='bg-brand-purple-10 h-[2px] w-14 rounded-2xl mt-2'></div>
         </div>
 
         <div className="grid grid-cols-12 gap-6">
@@ -48,6 +49,7 @@ export default function SectionServicos() {
           ))}
         </div>
       </div>
+      <div id='resume'></div>
     </div>
   )
 }

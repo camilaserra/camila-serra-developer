@@ -17,6 +17,7 @@ import { Icon } from '@iconify/react'
 import { useEffect, useState } from 'react'
 import Router from 'next/router'
 import { useAuth } from '../hooks/useAuth'
+import Script from 'next/script'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = useState(false)

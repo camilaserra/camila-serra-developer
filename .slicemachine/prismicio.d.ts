@@ -166,6 +166,46 @@ export interface BannersDaHomeDocumentDataBannersItem {
  * @typeParam Lang - Language API ID of the document.
  */
 export type BannersDaHomeDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<BannersDaHomeDocumentData>, "banners_da_home", Lang>;
+/** Content for Certificados documents */
+interface CertificadosDocumentData {
+    /**
+     * Certificados field in *Certificados*
+     *
+     * - **Field Type**: Group
+     * - **Placeholder**: *None*
+     * - **API ID Path**: certificados.certificados[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/group
+     *
+     */
+    certificados: prismicT.GroupField<Simplify<CertificadosDocumentDataCertificadosItem>>;
+}
+/**
+ * Item in Certificados → Certificados
+ *
+ */
+export interface CertificadosDocumentDataCertificadosItem {
+    /**
+     * Imagem field in *Certificados → Certificados*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: certificados.certificados[].imagem
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    imagem: prismicT.ImageField<never>;
+}
+/**
+ * Certificados document from Prismic
+ *
+ * - **API ID**: `certificados`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type CertificadosDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<CertificadosDocumentData>, "certificados", Lang>;
 /** Content for Post documents */
 interface PostDocumentData {
     /**
@@ -291,12 +331,12 @@ interface ServicoDocumentData {
  * @typeParam Lang - Language API ID of the document.
  */
 export type ServicoDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<ServicoDocumentData>, "servico", Lang>;
-export type AllDocumentTypes = AboutDocument | BannersDaHomeDocument | PostDocument | ServicoDocument;
+export type AllDocumentTypes = AboutDocument | BannersDaHomeDocument | CertificadosDocument | PostDocument | ServicoDocument;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { AboutDocumentData, AboutDocument, BannersDaHomeDocumentData, BannersDaHomeDocumentDataBannersItem, BannersDaHomeDocument, PostDocumentData, PostDocument, ServicoDocumentData, ServicoDocument, AllDocumentTypes };
+        export type { AboutDocumentData, AboutDocument, BannersDaHomeDocumentData, BannersDaHomeDocumentDataBannersItem, BannersDaHomeDocument, CertificadosDocumentData, CertificadosDocumentDataCertificadosItem, CertificadosDocument, PostDocumentData, PostDocument, ServicoDocumentData, ServicoDocument, AllDocumentTypes };
     }
 }

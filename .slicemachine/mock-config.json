@@ -5,7 +5,10 @@
     },
     "servico": {},
     "post": {},
-    "about": {}
+    "about": {},
+    "certificados": {
+      "certificados": {}
+    }
   },
   "slices": {}
 }

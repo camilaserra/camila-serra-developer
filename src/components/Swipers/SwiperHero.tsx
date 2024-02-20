@@ -9,7 +9,8 @@ export default function SwiperHero() {
   )
 
   return (
-    <Swiper
+    <>
+       <Swiper
       pagination={false}
       loop={true}
       autoplay={{
@@ -40,5 +41,7 @@ export default function SwiperHero() {
         </SwiperSlide>
       ))}
     </Swiper>
+    <div id="about"></div>
+    </>
   )
 }

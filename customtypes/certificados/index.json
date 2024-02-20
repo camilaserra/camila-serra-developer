@@ -1,0 +1,26 @@
+{
+  "id": "certificados",
+  "label": "Certificados",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "certificados": {
+        "type": "Group",
+        "config": {
+          "label": "Certificados",
+          "fields": {
+            "imagem": {
+              "type": "Image",
+              "config": {
+                "label": "Imagem",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
