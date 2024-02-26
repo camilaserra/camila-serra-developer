@@ -19,7 +19,7 @@ export default function SectionServicos() {
   return (
     <div className="py-10 md:py-20 bg-black">
       <div className="main_container">
-        <div className="mb-20 p-2">
+        <div className="mb-20 p-2 flex flex-col justify-center items-center">
           <p className="text-lg font-light mb-2 text-brand-gray-50 text-center md:text-start">
             Technologies I work
           </p>

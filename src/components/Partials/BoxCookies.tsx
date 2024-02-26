@@ -32,7 +32,7 @@ export const BoxCookies = () => {
 
   return (
     <div
-      className="fixed left-0 bottom-4 z-10 h-fit w-full border-[1px]  border-brand-purple-100 bg-black shadow-lg transition-all sm:w-[50%] md:left-4 md:w-[40%] lg:w-[30%]"
+      className="fixed left-0 bottom-4 z-50 h-fit w-full border-[1px]  border-brand-purple-100 bg-black shadow-lg transition-all sm:w-[50%] md:left-4 md:w-[40%] lg:w-[30%]"
       style={{
         display: openBoxCookie ? 'block' : 'none',
       }}

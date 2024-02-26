@@ -44,7 +44,7 @@ export default function SectionSobre() {
                 </strong>
               </p>
             </div>
-            <div className="gap-4 flex">
+            <div className="gap-4 flex justify-center md:justify-start">
                <Button variant="primaryOcean" onClick={() => window.open(`${aboutMe?.data.arquivo.url}`, "_blank")}>
                 Download CV
               </Button>

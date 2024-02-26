@@ -13,10 +13,10 @@ export default function SwiperHero() {
        <Swiper
       pagination={false}
       loop={true}
-      autoplay={{
+     /*  autoplay={{
         delay: 6000,
         disableOnInteraction: false,
-      }}
+      }} */
       modules={[Pagination, Autoplay]}
       className="h-[80vh] md:h-[100vh]"
     >
@@ -28,7 +28,7 @@ export default function SwiperHero() {
         >
           <div className="main_container">
             <div className="grid grid-cols-12 gap-6 relative">
-              <div className="col-span-2 md:col-span-8 flex flex-col items-center md:items-start justify-center">
+              <div className="col-span-12 md:col-span-8 flex flex-col items-center md:items-start justify-center">
                 <p className="text-5xl font-semibold text-white text-center md:text-start sm:text-5xl">
                   {banner.descricao}
                 </p>
