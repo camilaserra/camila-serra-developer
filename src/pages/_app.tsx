@@ -52,27 +52,22 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
       <DefaultSeo
         title="Camila Serra - Frontend Developer"
-        description="Welcome to my portfolio!"
+        description="Desenvolvedora Frontend Criativa e Talentosa, Transformando Visões em Realidade Digital com Expertise e Paixão."
         canonical="https://camila-serra-developer.vercel.app/"
         openGraph={{
           url: 'https://camila-serra-developer.vercel.app/',
           title: 'Camila Serra - Frontend Developer',
-          description: 'Welcome to myFrontend Developer - Camila Serra portfolio!',
+          description: 'Desenvolvedora Frontend Criativa e Talentosa, Transformando Visões em Realidade Digital com Expertise e Paixão.',
           images: [
             {
-              url: '/img/seo.png',
+              url: '/img/camila-serra-seo.png',
               width: 1200,
               height: 627,
-              alt: 'Image Seo',
+              alt: 'Camila Serra - Frontend Developer',
               type: 'image/png',
             },
           ],
-          siteName: 'camilaserradeveloper.com.br',
-        }}
-        twitter={{
-          handle: '@CamilaSerraDeveloper',
-          site: '@site',
-          cardType: 'summary_large_image',
+          siteName: 'camila-serra-developer.vercel.app',
         }}
       />
       <GlobalContextProvider>

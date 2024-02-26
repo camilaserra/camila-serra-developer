@@ -85,18 +85,6 @@ export default function PoliticasDePrivacidade() {
                 eletrônico é completamente seguro.
               </p>
               <p className="mb-3 text-center text-white text-2xl font-semibold md:text-start">
-                Retenção de Dados
-              </p>
-              <p className="mb-5 text-center text-white font-normal md:text-justify">
-                <strong>Retenção de Informações: </strong>
-                Suas informações pessoais são mantidas somente pelo tempo
-                necessário para cumprir com os fins para os quais foram
-                coletadas, a menos que seja necessário reter tais informações
-                por períodos mais longos para cumprir com obrigações legais ou
-                regulatórias.
-              </p>
-
-              <p className="mb-3 text-center text-white text-2xl font-semibold md:text-start">
                 Seus Direitos
               </p>
               <p className="mb-10 text-center text-white font-normal md:text-justify">
@@ -139,7 +127,7 @@ export default function PoliticasDePrivacidade() {
                 <p className="text-center text-white font-normal mb-10">
                   Se você tiver dúvidas, preocupações ou solicitações
                   relacionadas à Política de Privacidade, entre em contato
-                  comigo conosco através dos canais de comunicação fornecidos em
+                  comigo através dos canais de comunicação fornecidos em
                   meu website.
                 </p>
                 <p className="text-center text-white font-medium">
